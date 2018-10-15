@@ -12,3 +12,5 @@ gnore all
 # private files
 private/*
 
+# a.out (default name for compiled file)
+*/a.out

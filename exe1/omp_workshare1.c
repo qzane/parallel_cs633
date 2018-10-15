@@ -34,7 +34,8 @@ chunk = CHUNKSIZE;
     }
   printf("Thread %d starting...\n",tid);
 
-  #pragma omp for schedule(dynamic,chunk)
+  //#pragma omp for schedule(dynamic,chunk)
+  #pragma omp for schedule(static,chunk)
   for (i=0; i<N; i++)
     {
     c[i] = a[i] + b[i];
